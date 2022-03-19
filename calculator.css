@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+body{
+    background-color: #3B4664;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    margin-top: 120px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 550px;
+}
+.haut{
+    display: flex;
+}
+
+
+.gauche{
+    
+    margin-bottom: 40px;
+}
+.droite{
+    font-size: 15px;
+    position: relative;
+    left: 300px;
+    top: 14px;
+  
+}
+
+.ecran{
+   /* width: 540px;
+    height: 128px;
+    */
+    background-color: #181F32;
+    border-radius: 10px;
+    padding: 40px;
+    width: 460px;
+    height: 48px;
+   
+    
+    
+}
+
+.touche{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(5,64px);
+    grid-gap: 25px;
+    background-color: #252D44;
+    width: 478px;
+    height: 421px;
+    border-radius: 10px;
+    padding: 31px;
+    margin-top: 24px;
+   
+}
+
+button{
+    background-color: #EAE3DB;
+    color: #484B5A;   
+    border-radius: 10px;
+    font-size: 32px;
+    font-family: 'Spartan', sans-serif;
+    box-shadow: 0 4px #B5A49A;
+    border: none;
+}
+
+button:nth-child(4){
+    background-color: #647299;
+    color: white;
+    font-size: 26px;
+    box-shadow: 0 4px #424E74;
+}
+
+button:nth-child(17){
+    background-color: #647299;
+    color: white;
+    width: 227px;
+    font-size: 26px;
+    grid-column: span 2;
+    box-shadow: 0 4px #424E74;
+}
+
+button:nth-child(18){
+    background-color: #D13F30;
+    color: white;
+    width: 227px;
+    font-size: 26px;
+    box-shadow: 0 4px #992315;
+}
+
+#toggle{
+    
+    width: 60px;
+    height: 26px;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-top: -25px;
+    list-style: none;
+    background-color: #252C46;
+    cursor: pointer;
+    
+}
+
+#toggle .indicator{
+    position: absolute;
+    background-color: #CA3E2F;
+    height: 24px;
+    width: 24px;
+    border-radius: 20px;
+    margin-top: 1px;
+    margin-left: 4px;
+    
+    /*transform: scale(0.9); */
+}
+
+.active .indicator{
+    right: 10px;
+}
+
+body.active{
+    background-color: #17062A;
+    color: #FFE43E;
+}
+
+.ecran.active{
+    background-color: #1E0836;
+}
+
+
+
+.touche.active{
+    background-color: #1E0836;
+}
+
+.active button{
+    background-color: #331B4D;
+    box-shadow: 0 4px #851C9D;
+    color: #FFE43E;
+}
+
+button:nth-child(18).active{
+    background-color: #00DECF;
+    box-shadow: 0 4px #6EF7EF;
+}
+
+button:nth-child(17).active,button:nth-child(4).active{
+    background-color: #56077C;
+    box-shadow: 0 4px #BF15F4;
+}
+
