@@ -6,7 +6,7 @@ let touche = [...document.querySelectorAll('.bouton')];
 const listeKeycode = touche.map(touche => touche.dataset.key);
 const ecran =document.querySelector('.ecran');
 
-/*faire un événement en fonction de quant on presse on récupére le keycde*/
+/*faire un événement en fonction de quant on presse on récupére le keycode*/
 
 document.addEventListener('keydown',(e)=>{
     const valeur = e.keyCode.toString();
